@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backgroundLayout1x"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.parse.starter.LawyerReg">
+
+    <TextView
+        android:text="LAWYER REGISTRATION FORM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView3" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Area of Specialisation"
+        android:ems="10"
+        android:id="@+id/Lspecial"
+        android:layout_below="@+id/Lname"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:ems="10"
+        android:layout_marginTop="11dp"
+        android:id="@+id/Lname"
+        android:layout_below="@+id/idlaw"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location"
+        android:ems="10"
+        android:id="@+id/Llocation"
+        android:inputType="text"
+        android:layout_below="@+id/Lspecial"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Alma Mater"
+        android:ems="10"
+        android:id="@+id/Lalma"
+        android:layout_below="@+id/Llocation"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/Lnumber"
+        android:hint="contact number"
+        android:layout_below="@+id/Lexp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Total Experience in years"
+        android:ems="10"
+        android:id="@+id/Lexp"
+        android:inputType="number"
+        android:layout_below="@+id/Lalma"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp"/>
+
+    <Button
+        android:text="Register"
+        android:layout_width="wrap_content"
+        android:id="@+id/Lregister"
+        android:onClick="registerClicked"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/idlaw"
+        android:hint="Registration ID"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/Lemail"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/Lnumber"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.parse.starter.Dashboard"
+    android:background="@drawable/q10">
+
+    <Button
+        android:text="New NGO Registration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newNgoReg"
+        android:background="#FAFAF2"
+        android:layout_below="@+id/newLawReg"
+        android:layout_marginTop="26dp"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Update Lawyer Information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newNgoReg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:id="@+id/updatelawyer"
+
+        android:background="#FAFAF2" />
+
+    <Button
+        android:text="View Lawyer Information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewlawyer"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp"
+        android:layout_alignParentTop="true"
+        android:background="#FAFAF2" />
+
+    <Button
+        android:text="New Lawyer Registration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:id="@+id/newLawReg"
+
+        android:background="#FAFAF2"
+        android:layout_below="@+id/viewngo"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Update NGO Information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:id="@+id/updatengo"
+
+        android:background="#FAFAF2"
+        android:layout_below="@+id/updatelawyer"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="View Ngo Information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewngo"
+
+        android:background="#FAFAF2"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/viewlawyer"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backgroundLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.parse.starter.Updatelawyer">
+
+
+    <TextView
+        android:text="LAWYER INFORMATION UPDATE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView4"
+        android:elevation="5dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Area of Specialisation"
+        android:ems="10"
+        android:id="@+id/Lspecialx"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/Lnamex"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Alma Mater"
+        android:ems="10"
+        android:id="@+id/Lalmax"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/Llocationx"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location"
+        android:ems="10"
+        android:id="@+id/Llocationx"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/Lspecialx"
+        android:layout_alignParentStart="true"
+        android:inputType="text" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Total Experience in years"
+        android:ems="10"
+        android:id="@+id/Lexpx"
+        android:layout_below="@+id/Lalmax"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:inputType="number" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/Lnumberx"
+        android:hint="contact number"
+        android:layout_below="@+id/Lexpx"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/Lemailx"
+        android:hint="email"
+        android:layout_below="@+id/Lnumberx"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp"
+        android:inputType="textEmailAddress" />
+    <Button
+        android:text="Update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/Lupdatex"
+        android:onClick="lupdateClicked" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:ems="10"
+        android:layout_marginTop="32dp"
+        android:id="@+id/Lnamex"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="13dp"
+        android:id="@+id/idtextl"
+        android:layout_alignParentEnd="true"
+        android:elevation="2dp" />
+</RelativeLayout>
