@@ -1,3 +1,4 @@
+#Author: Shraddha Kantal
 /*
  * Copyright (c) 2015-present, Parse, LLC.
  * All rights reserved.
@@ -131,46 +132,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
-   /* ParseUser user= new ParseUser();
-    user.setUsername("sk6");
-    user.setPassword("db");
-    user.signUpInBackground(new SignUpCallback() {
-      @Override
-      public void done(ParseException e) {
-        if(e == null){
-          //ok
-          Log.i("sign ok", "did it");
-        } else {
-          e.printStackTrace();
-        }
-      }
-    });
-usernameEditText.getText.toString
-ListView listView =findViewById(R.id.ListView);
-ArrayList<String> usernames=newArrayList<String>();
-ArrayAdapter arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1,usernames);
-listView.setAdapter(arrayAdapter);
-ParseQuery<ParseUser> query = ParseUser.getQuery();
-query.whereNotEqualTo("username",Parse.getCurrentUser().getUsername());
-query.addAscendingOrder("username");
-query.findInBackground.... insta video 14 9.16 to get users and add inarray list so that in in view
-
-//diff table
-ParseObject object = new ParseObject("Image");//image table for storing image
-object.put("image",file);
-object.put("username",ParseUser.getCurrentUser().getUsername());
-object...... vid 16 insta 26.12
-
-//put someones name on top
-Intent intent =getIntent();
-String username= intent.getStringExtra("username");
-setTitle(username+"'s photos");
-
-//ParseQuery<ParseUser> query = ParseUser.getQuery();
-query.whereEqualTo("username",ParseUser.getCurrentUser().getUsername();query.find in backgroung list of users vid4 twitter 14min
-// tweet.saveInBackground(); after making new column in table
-
-*/
+ 
 
 
     usernameEditText = findViewById(R.id.usernameEditText);
